@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Bootstrap Css Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Alex+Brush&family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Alex+Brush&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Yeseva+One&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.mainCard {
+  position: relative;
+  width: 11.7in;
+  height: 8.27in;
+  background-color: #fff;
+  background-image: url(./Image/TaxSevaBg.png);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  border: 1px solid #000;
+  padding-left: 0.737in;
+  padding-top: 0.515in;
+  padding-bottom: 0.515in;
+}
+.mainCard .CardLogo {
+  width: 2.46in;
+  margin-left: -10px;
+}
+.mainCard .BatchIcon {
+  position: absolute;
+  width: 170px;
+  top: 20%;
+  right: 30%;
+}
+
+.certificateText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 43.3px;
+  font-weight: 800;
+  color: #243365;
+  padding-top: 55px;
+  line-height: 30px;
+}
+
+.memberText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #243365;
+  line-height: 25px;
+}
+
+.subText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #2d4286;
+  padding-top: 25px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.NameWrapper {
+  max-width: 600px;
+}
+.NameWrapper .MemberName {
+  padding-top: 30px;
+  font-family: "Alex Brush", cursive;
+  font-size: 39.5px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #2d4286;
+  letter-spacing: 2.5px;
+}
+.NameWrapper .nameLine {
+  width: 100%;
+  height: 1.5px;
+  background-color: #2d4286;
+}
+
+.normalText {
+  padding-top: 30px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  color: #2d4286;
+  font-weight: 400;
+}
+.normalText span {
+  font-weight: 700;
+}
+
+.certificateMainText {
+  line-height: 20px;
+  padding-top: 5px !important;
+}
+
+.certificateIdText {
+  color: #566184;
+  font-weight: 700;
+}
+
+.dateWrapper {
+  align-items: center;
+  justify-content: left;
+  gap: 15px;
+}
+.dateWrapper p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  color: #2d4286;
+  font-weight: 500;
+}
+
+.info {
+  padding-top: 10px;
+  align-items: center;
+  justify-content: left;
+  gap: 60px;
+}
+
+.signinWrapper {
+  padding-top: 90px;
+  gap: 150px;
+}
+.signinWrapper .founder {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  align-items: center;
+  justify-content: center;
+}
+.signinWrapper .founder .founderLine {
+  border: 0.5px solid #4a536e;
+  border-style: dashed;
+  height: 0.5px;
+  width: 100%;
+}
+.signinWrapper .founder p {
+  padding-top: 10px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  color: #2d4286;
+  font-weight: 400;
+}/*# sourceMappingURL=certificate.css.map */
+    </style>
+</head>
+<body>
+    
+   <!--Certificate Section Start-->
+   <div class="container-fluid d-flex align-items-center justify-content-center py-5">
+     <!--Certificate Card Start-->
+     <div class="mainCard">
+
+        <img class="BatchIcon" src="./Image/BatchIcon.png" alt="Batcj Icon"/>
+
+        <!--Logo-->
+        <img class="CardLogo" src="./Image/TaxLogo.jpg" alt="Tax Seva Kendra Logo"/>
+
+        <p class="certificateText">CERTIFICATE</p>
+        <p class="memberText">OF MEMBERSHIP</p>
+        <p class="subText">this certificate is proudly presented to</p>
+        <div class="NameWrapper">
+            <p class="MemberName">MANOJ KUMAR</p>
+            <div class="nameLine"></div>
+        </div>
+        <p class="normalText">For being a member of the <span>“ Tax Seva Kendra ”</span></p>
+        <p class="normalText certificateMainText"><span class="certificateIdText">Certificate ID No. :</span> taxsevakendrafranchise0123</p>
+        <p class="normalText certificateMainText"><span class="certificateIdText">Franchise Name :</span> Dialmyca seva kendra</p>
+
+        <div class="info d-flex">
+            <div class="dateWrapper d-flex">
+                <p>Date :</p>
+                <!--Date-->
+                <p>10-12-2024</p>
+            </div>
+
+            <div class="dateWrapper d-flex">
+                <p>Issued By :</p>
+                <!--Comoany Name-->
+                <p>Tax Seva Kendra</p>
+            </div>
+
+
+        </div>
+
+        <div class="signinWrapper d-flex">
+            <div class="founder">
+                <div class="founderLine"></div>
+                <p>Founder</p>
+            </div>
+
+            <div class="founder">
+                <div class="founderLine"></div>
+                <p>Manager</p>
+            </div>
+        </div>
+         
+     </div>
+     <!--Certificate Card End-->
+   </div>
+   <!--Certificate Section End-->
+
+
+    <!--Bootstrap Js Link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
